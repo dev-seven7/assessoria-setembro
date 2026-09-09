@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Assessoria de Imprensa · Setembro 2026 · Grupo Øliver's</title>
+<style>
+:root{
+  --bg:#f6f5f2; --surface:#ffffff; --ink:#1a1a18; --ink-soft:#5c5a54;
+  --line:#e2dfd8; --accent:#0f3d2e; --accent-soft:#e8f0ec;
+  --alert:#7a1f1f; --alert-bg:#fdf2f0; --alert-line:#e8c4bd;
+  --ok:#0f5132; --ok-bg:#e8f0ec; --wait-bg:#f5f1e6; --wait:#6b5a25;
+  --lock-bg:#f0eeea; --lock:#4a4842;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+
+header{background:var(--accent);color:#fff;padding:52px 0 44px;margin-bottom:36px}
+header .wrap{padding-bottom:0}
+.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  opacity:.75;margin:0 0 14px}
+header h1{margin:0 0 6px;font-size:2rem;line-height:1.2;font-weight:600;letter-spacing:-.01em}
+header h2{margin:0 0 22px;font-size:1.05rem;font-weight:400;opacity:.85}
+.meta{border-top:1px solid rgba(255,255,255,.22);padding-top:18px;
+  display:flex;flex-wrap:wrap;gap:10px 34px;font-size:.86rem}
+.meta div span{display:block;opacity:.65;font-size:.72rem;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+
+.intro{font-size:1.02rem;color:var(--ink-soft);margin-bottom:34px}
+
+.alert{background:var(--alert-bg);border:1px solid var(--alert-line);
+  border-left:5px solid var(--alert);border-radius:8px;padding:26px 26px 22px;margin:0 0 44px}
+.alert h3{margin:0 0 14px;color:var(--alert);font-size:1.12rem;line-height:1.35}
+.alert p{margin:0 0 12px}
+.alert .lbl{font-weight:600;display:block;margin:18px 0 8px}
+.alert ul{margin:0 0 4px;padding-left:22px}
+.alert li{margin-bottom:6px}
+.alert .why{background:#fff;border-radius:6px;padding:13px 16px;margin:16px 0;
+  font-size:.94rem;border:1px solid var(--alert-line)}
+
+section{margin-bottom:52px}
+.snum{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:8px}
+section>h2{margin:0 0 26px;font-size:1.55rem;font-weight:600;letter-spacing:-.01em;
+  padding-bottom:12px;border-bottom:2px solid var(--accent)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:9px;
+  padding:22px 24px;margin-bottom:18px}
+.card h3{margin:0 0 4px;font-size:1.12rem;font-weight:600;line-height:1.35}
+.when{font-size:.85rem;color:var(--accent);font-weight:600;margin:0 0 14px;
+  letter-spacing:.01em}
+.card p{margin:0 0 12px}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+.card ul{margin:0 0 12px;padding-left:20px}
+.card li{margin-bottom:7px}
+.card li:last-child{margin-bottom:0}
+
+.pauta{background:var(--accent-soft);border-radius:6px;padding:13px 16px;
+  font-size:.94rem;margin-top:14px}
+.pauta b{color:var(--accent)}
+.flag{background:var(--wait-bg);border-left:4px solid var(--wait);border-radius:0 6px 6px 0;
+  padding:13px 16px;font-size:.94rem;margin-top:14px}
+.quote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:14px 0;
+  font-style:italic;color:var(--ink-soft)}
+.done{display:inline-block;background:var(--ok-bg);color:var(--ok);font-size:.72rem;
+  font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 9px;border-radius:20px;margin-left:8px;vertical-align:middle}
+
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:var(--surface);
+  font-size:.93rem;min-width:520px}
+th{background:var(--accent);color:#fff;text-align:left;padding:12px 14px;
+  font-weight:600;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#fbfaf8}
+.tag{display:inline-block;font-size:.76rem;font-weight:600;padding:3px 10px;
+  border-radius:20px;white-space:nowrap}
+.t-ok{background:var(--ok-bg);color:var(--ok)}
+.t-wait{background:var(--wait-bg);color:var(--wait)}
+.t-lock{background:var(--lock-bg);color:var(--lock)}
+
+footer{border-top:2px solid var(--accent);padding-top:26px;margin-top:8px}
+footer p{margin:0 0 16px;color:var(--ink-soft)}
+.sig{font-weight:600;color:var(--ink);font-size:1.02rem;margin-bottom:2px}
+.sig+div{font-size:.9rem;color:var(--ink-soft)}
+
+@media(max-width:600px){
+  header{padding:38px 0 32px}
+  header h1{font-size:1.55rem}
+  section>h2{font-size:1.3rem}
+  .card{padding:18px 17px}
+  .alert{padding:20px 18px}
+  .wrap{padding:0 16px 60px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Comunicado à assessoria de imprensa</p>
+    <h1>Ações de Marketing · Setembro 2026</h1>
+    <h2>Grupo Øliver's · Øliver's Pizza e Temakeria Universitária</h2>
+    <div class="meta">
+      <div><span>De</span>Gabriela Mello · Diretora de Marketing</div>
+      <div><span>Data</span>09 de setembro de 2026</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<p class="intro">Olá, time! Segue o calendário de ações de setembro das duas marcas, com os ângulos de pauta de cada uma. Esta é a versão vigente — peço que trabalhem por ela. Antes de tudo, um ponto obrigatório de leitura.</p>
+
+<div class="alert">
+  <h3>🚫 Alerta jurídico — leiam antes de escrever qualquer coisa sobre a campanha do filme</h3>
+  <p>A campanha da Øliver's com o filme <b>O Coyote vs. Acme</b> envolve distribuição de ingressos de cinema. <b>Esses ingressos não podem, em hipótese alguma, ser comunicados como contrapartida de compra.</b></p>
+
+  <span class="lbl">❌ Não pode ser dito, escrito ou sugerido — em release, matéria, nota, resposta a jornalista ou legenda:</span>
+  <ul>
+    <li>"Compre o combo e ganhe um ingresso"</li>
+    <li>"Na compra do combo, você ganha o ingresso"</li>
+    <li>Qualquer construção que ligue a compra ao recebimento do ingresso</li>
+  </ul>
+
+  <div class="why"><b>Motivo:</b> essa vinculação configura <b>venda casada</b> e pode ser enquadrada como <b>sorteio</b> perante a Caixa Econômica Federal. É risco jurídico real para o grupo.</div>
+
+  <span class="lbl">✅ Como pode ser comunicado:</span>
+  <ul>
+    <li>Os ingressos são <b>cortesias cedidas pela distribuidora</b>, distribuídos pela Øliver's em <b>ações de relacionamento</b> com clientes e parceiros.</li>
+    <li>Para influenciadores e parceiros: <i>"Enviamos também um convite de cortesia para você assistir ao filme."</i></li>
+    <li>A campanha em si — combo temático e caixa temática — pode ser comunicada normalmente. <b>O que não pode é amarrar as duas coisas.</b></li>
+  </ul>
+  <p style="margin-top:16px;margin-bottom:0">Se algum veículo perguntar diretamente sobre ingressos, <b>acionem a Diretoria de Marketing antes de responder.</b></p>
+</div>
+
+<section>
+  <p class="snum">Seção 01</p>
+  <h2>Øliver's Pizza</h2>
+
+  <div class="card">
+    <h3>Campanha central do mês — O Coyote vs. Acme</h3>
+    <p class="when">No ar desde 20/08 · até 24/09</p>
+    <p>Campanha da Øliver's em parceria com a <b>Paris Filmes</b> e a <b>Espaço Z</b>, em cima do filme <b>O Coyote vs. Acme</b> (universo Looney Tunes), que estreou em 27/08.</p>
+    <ul>
+      <li><b>Formato:</b> combo temático e caixa temática exclusiva, em salão e delivery.</li>
+      <li><b>Precedente da marca:</b> mesmo formato da campanha anterior com o Chico Bento.</li>
+    </ul>
+    <div class="pauta"><b>Ângulo de pauta:</b> entretenimento e gastronomia — como uma rede carioca constrói campanha em cima de lançamento de cinema para atrair público familiar.</div>
+    <div class="flag">⚠️ Ver o alerta jurídico acima antes de qualquer menção a ingressos.</div>
+  </div>
+
+  <div class="card">
+    <h3>Independência do Brasil <span class="done">Realizada</span></h3>
+    <p class="when">07/09</p>
+    <p>Conteúdo e tráfego reforçados nas regiões de <b>Araruama e Lapa</b>, com estímulo a reserva antecipada e combos.</p>
+  </div>
+
+  <div class="card">
+    <h3>Rock in Rio — conteúdo de oportunidade</h3>
+    <p class="when">Início do mês</p>
+    <p>Conteúdo de oportunidade aproveitando o buzz do evento, e envio do combo do Coyote a influenciadores cariocas que estejam reunindo amigos para assistir aos shows.</p>
+    <div class="flag">⚠️ <b>A marca não tem ativação no evento.</b> Não sugerir pauta de "Øliver's no Rock in Rio".</div>
+  </div>
+
+  <div class="card">
+    <h3>Semana do Cliente · Dia do Cliente</h3>
+    <p class="when">12 a 20/09 · pico em 15/09 (terça)</p>
+    <p>Segunda maior ação comercial do mês. A janela pega o fim de semana anterior, a semana e o pós-fim de semana.</p>
+    <p><b>Confirmado:</b></p>
+    <ul>
+      <li><b>Participação na ação de Dia do Cliente do iFood</b> (15/09), com vídeo e banner na plataforma.</li>
+      <li>Ação no canal próprio da marca, redes sociais, disparos para a base e ponto de venda.</li>
+      <li><b>Sorteio do mês</b> com tema Semana do Cliente e cupons surpresa nos stories.</li>
+    </ul>
+    <div class="flag"><b>Ainda não liberado para divulgação:</b> valores de cupom, descontos, sabores e combos que entram na ação.</div>
+    <div class="pauta"><b>Ângulo de pauta:</b> comportamento de consumo e concorrência no delivery na principal data de relacionamento do varejo alimentar.</div>
+  </div>
+
+  <div class="card">
+    <h3>Rodízio e reservas — benefício estendido</h3>
+    <p class="when">Mês todo</p>
+    <p>O <b>valor especial para mesas reservadas com antecedência foi estendido para setembro</b>. Vale para quem não conseguiu aproveitar em agosto e para quem já aproveitou e quer repetir.</p>
+    <p style="margin-bottom:6px"><b>Mensagem central aprovada:</b></p>
+    <div class="quote">"Setembro chega com novidades. Estendemos o benefício para mesas reservadas para o rodízio. Para quem não aproveitou, para quem já aproveitou e quer mais. Aproveite agora, chama a galera, reserve sua experiência."</div>
+    <div class="flag">Os valores variam por dia da semana — <b>consultar a Diretoria antes de publicar qualquer número.</b></div>
+    <div class="pauta"><b>Ângulo de pauta:</b> mês inteiro de oportunidade em reservas antecipadas.</div>
+  </div>
+
+  <div class="card">
+    <h3>Pizza Torta de Limão de presente</h3>
+    <p class="when">Mês todo · reforço nas duas últimas semanas</p>
+    <p>O cliente escolhe seu combo ou pizza salgada, adiciona a <b>Pizza Torta de Limão</b> e ela é zerada no carrinho, indo de presente. Válido para carrinhos acima de <b>R$ 99,90</b>, no canal próprio da marca.</p>
+    <p><b>Liberado para pauta</b>, incluindo a mecânica e o valor mínimo.</p>
+  </div>
+
+  <div class="card">
+    <h3>Copa Rio · Super Vôlei — Arena Niterói</h3>
+    <p class="when">24, 25 e 26/09 · quinta, sexta e sábado</p>
+    <p>A <b>Øliver's é a pizza oficial da Copa Rio</b>, torneio de vôlei indoor na Arena Niterói, com <b>Flamengo, Fluminense e Dental Praia Clube</b>, e <b>transmissão ao vivo pela SporTV</b>. Ingressos a R$ 60 (inteira) e R$ 30 (meia), com dias já esgotados.</p>
+    <p><b>O que a Øliver's faz no evento:</b></p>
+    <ul>
+      <li><b>Fornecimento oficial de alimentação da área VIP</b> — 300 a 350 convidados por dia, com stand dedicado.</li>
+      <li><b>Ativação de marca na área do público geral</b>, com roleta premiada, brindes personalizados e vouchers de cupom.</li>
+      <li><b>Kits para convidados de destaque</b> do evento: atletas, imprensa e poder público.</li>
+      <li><b>Placa estática de quadra</b> com a assinatura <i>"a pizza oficial do Copa Rio"</i>, visível durante os jogos e na transmissão.</li>
+      <li><b>Papel de pizza personalizado</b> nas fatias.</li>
+    </ul>
+    <div class="flag">⚠️ Na área do público geral a Øliver's faz <b>apenas ativação de marca — não vende pizza ao público</b>. O fornecimento é exclusivo da área VIP. Não comunicar como "venda de pizza no evento".</div>
+    <div class="pauta"><b>Ângulo de pauta:</b> o mais forte do mês. Marca carioca como fornecedora oficial de um torneio com transmissão nacional. Gancho para esporte, marketing esportivo e economia local.</div>
+  </div>
+
+  <div class="card">
+    <h3>Aniversário da unidade Alcântara — 2 anos</h3>
+    <p class="when">Última semana de setembro</p>
+    <p>A unidade de <b>Alcântara (São Gonçalo)</b> completa dois anos, com ação prevista para a última semana do mês.</p>
+    <div class="flag">Formato e data exata a confirmar. Podem sinalizar interesse de veículos regionais de São Gonçalo, mas <b>aguardem nossa confirmação</b> antes de oferecer a pauta.</div>
+  </div>
+
+  <div class="card">
+    <h3>Nota de serviço — Copacabana</h3>
+    <p>A unidade de <b>Copacabana atualizou seu horário de funcionamento</b>. Antes de publicar qualquer material com horário de loja, confirmem os dados atualizados conosco.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Seção 02</p>
+  <h2>Temakeria Universitária</h2>
+
+  <div class="card" style="border-left:5px solid var(--wait)">
+    <p style="margin:0"><b>⚠️ O cardápio está em revisão de preços. Nenhuma peça, release ou resposta a veículo deve comunicar preço de item.</b> A comunicação se apoia em cupom, benefício e conteúdo.</p>
+  </div>
+
+  <p style="color:var(--ink-soft);margin:22px 0 18px">Foco em setembro no público de <b>São Gonçalo</b>, unidade própria e principal praça da marca no Rio.</p>
+
+  <div class="card">
+    <h3>Semana do Cliente · Dia do Cliente</h3>
+    <p class="when">12 a 20/09 · pico em 15/09</p>
+    <p>Mesma janela da Øliver's.</p>
+    <ul>
+      <li><b>Cupom especial do mês da marca</b>, divulgado nos stories ao longo do período.</li>
+      <li>Ação com foco nos <b>combos que já existem</b> — não haverá lançamento de combo novo para a data.</li>
+    </ul>
+    <div class="flag"><b>Ainda não liberado para divulgação:</b> mecânica e valores do cupom.</div>
+  </div>
+
+  <div class="card">
+    <h3>Dia da Banana</h3>
+    <p class="when">22/09</p>
+    <p>Única data gastronômica do mês para a marca. Ativação em cima do <b>hot roll de banana com Nutella</b>, produto já consagrado da casa, <b>mais um produto novo</b> que será apresentado.</p>
+    <div class="pauta"><b>Ângulo de pauta:</b> datas gastronômicas alternativas e o uso de ingrediente brasileiro na culinária japonesa. Boa pauta para editorias de gastronomia e conteúdo leve.</div>
+  </div>
+
+  <div class="card">
+    <h3>Independência <span class="done">Realizada</span></h3>
+    <p class="when">07/09</p>
+    <p>Conteúdo e tráfego reforçados na região de <b>Araruama</b>, com estímulo a combos e reserva antecipada.</p>
+  </div>
+
+  <div class="card">
+    <h3>Benefícios ativos</h3>
+    <ul>
+      <li><b>Benefício de aniversariantes</b> e <b>reserva para aniversário</b> — ativos e liberados para comunicação.</li>
+      <li>Ação de <b>produto âncora</b> na loja de São Gonçalo.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Conteúdo, trends e comunicação regional</h3>
+    <p>A comunicação da marca no <b>Rio de Janeiro</b> é produzida internamente pelo time do grupo: conteúdos novos, adaptação de trends de TikTok e Reels, e ações com influenciadores locais.</p>
+    <div class="pauta"><b>Ângulo de pauta:</b> regionalização da comunicação de uma marca nacional — como a operação carioca ganha voz própria.</div>
+  </div>
+
+  <div class="card">
+    <h3>Ainda não liberado</h3>
+    <p style="margin:0"><b>Desconto para estudantes e professores</b> — não comunicar.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Seção 03</p>
+  <h2>Expansão · Inauguração em Araruama</h2>
+
+  <div class="card">
+    <h3>Nova unidade da Temakeria Universitária</h3>
+    <p class="when">Inauguração: 25/09 · sexta-feira</p>
+    <p>Nova unidade franqueada na <b>Região dos Lagos</b>, primeira entrada da marca no interior do estado.</p>
+
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Marco</th><th>Data</th></tr></thead>
+        <tbody>
+          <tr><td>Landing page de captação no ar</td><td>12/09</td></tr>
+          <tr><td>Ativação de influenciadores locais</td><td>a partir de 21/09</td></tr>
+          <tr><td><b>Inauguração</b></td><td><b>25/09 (sexta)</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:16px"><b>Ativações:</b> campanha de tráfego regional, influenciadores locais, giveaway de inauguração, brindes, impressos e mídia física de abertura.</p>
+    <div class="pauta"><b>Ângulo de pauta:</b> expansão de rede para a Região dos Lagos, geração de emprego local e chegada da marca a uma praça nova. <b>Pauta regional forte</b> para veículos de Araruama, Cabo Frio e Região dos Lagos.</div>
+    <div class="flag"><b>Kit de imprensa da inauguração</b> — fotos, dados da unidade e disponibilidade do franqueado para entrevista: enviamos com antecedência.</div>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Seção 04</p>
+  <h2>Quadro consolidado</h2>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Ação</th><th>Data</th><th>Marca</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Campanha O Coyote vs. Acme</td><td>até 24/09</td><td>Øliver's</td><td><span class="tag t-ok">liberado</span> <span style="font-size:.85rem">⚠️ ver alerta jurídico</span></td></tr>
+        <tr><td>Independência</td><td>07/09</td><td>ambas</td><td><span class="tag t-ok">realizada</span></td></tr>
+        <tr><td>Rock in Rio (oportunidade)</td><td>início do mês</td><td>ambas</td><td><span class="tag t-ok">liberado</span> <span style="font-size:.85rem">sem ativação no evento</span></td></tr>
+        <tr><td>Semana do Cliente</td><td>12 a 20/09</td><td>ambas</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Dia do Cliente · iFood</td><td>15/09</td><td>ambas</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Rodízio + reservas estendido</td><td>mês todo</td><td><b>Øliver's</b></td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Pizza Torta de Limão de presente</td><td>mês todo</td><td>Øliver's</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Dia da Banana</td><td>22/09</td><td>Temakeria</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Copa Rio · Super Vôlei</td><td>24, 25 e 26/09</td><td>Øliver's</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Inauguração Araruama</td><td>25/09</td><td>Temakeria</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Aniversário 2 anos Alcântara</td><td>última semana</td><td>Øliver's</td><td><span class="tag t-wait">aguardando confirmação</span></td></tr>
+        <tr><td>Valores de cupom e desconto</td><td>—</td><td>ambas</td><td><span class="tag t-lock">não divulgar</span></td></tr>
+        <tr><td>Desconto estudantes/professores</td><td>—</td><td>Temakeria</td><td><span class="tag t-lock">não divulgar</span></td></tr>
+        <tr><td>Preços da Temakeria</td><td>—</td><td>Temakeria</td><td><span class="tag t-lock">não divulgar</span></td></tr>
+        <tr><td>Venda de pizza ao público na Copa Rio</td><td>—</td><td>Øliver's</td><td><span class="tag t-lock">não existe · só área VIP</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="margin-top:20px;color:var(--ink-soft)"><b>Regra transversal:</b> todas as ações contam com conteúdo de parceiros e influenciadores, divulgação nas redes próprias e disparos para a base de clientes.</p>
+</section>
+
+<footer>
+  <p>Qualquer demanda de veículo sobre as marcas do grupo, favor direcionar à Diretoria de Marketing antes do retorno — especialmente perguntas sobre <b>ingressos do filme</b> ou <b>valores de cupom</b>.</p>
+  <div class="sig">Gabriela Mello</div>
+  <div>Diretora de Marketing · Grupo Øliver's</div>
+</footer>
+
+</div>
+</body>
+</html>
